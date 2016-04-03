@@ -5,7 +5,7 @@
 sudo apt-get install autoconf build-essential ncurses-dev
 
 # Install last zsh version from http://zsh.sourceforge.net/Arc/source.html
-wget -q -O - http://sourceforge.net/projects/zsh/files/zsh/5.2/zsh-5.2.tar.gz/d$
+wget -q -O - http://sourceforge.net/projects/zsh/files/zsh/5.2/zsh-5.2.tar.gz/download | tar xvzf -
 
 cd zsh-5.2/
 
