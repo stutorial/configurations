@@ -26,3 +26,6 @@ which zsh | tee -a /etc/shells
 # Set Zsh as the default shell for the current user. 
 chsh -s $(which zsh)
 sudo chsh -s $(which zsh)
+
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
