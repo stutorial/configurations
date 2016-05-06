@@ -1,6 +1,9 @@
 # Fuente
 # http://blog.byteb.us/oh-my-zsh-debian-tutorial/
 
+# Update
+sudo apt-get update
+
 # Install dependencies. 
 sudo apt-get install autoconf build-essential ncurses-dev
 
@@ -18,13 +21,8 @@ make
 sudo make install
 
 # Add Zsh to the list of shells in /etc/shells. 
-sudo echo "/usr/local/bin/zsh >> /etc/shells"
+which zsh | tee -a /etc/shells
 
 # Set Zsh as the default shell for the current user. 
-sudo chsh -s "/usr/local/bin/zsh"
-
-# Check zsh version
-# zsh --version
-
-# Check default shell
-# echo $SHELL
+chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
