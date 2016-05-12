@@ -20,6 +20,8 @@ make
 
 sudo make install
 
+cd ..
+
 # Add Zsh to the list of shells in /etc/shells. 
 sudo which zsh | sudo tee -a /etc/shells
 
@@ -29,3 +31,7 @@ sudo chsh -s $(which zsh)
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Install santi-theme
+cp oh-my-zsh/santi-theme ~/.oh-my-zsh/themes
+sed -i s/robbyrussell/santi ~/.zshrc
