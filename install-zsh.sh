@@ -21,7 +21,7 @@ make
 sudo make install
 
 # Add Zsh to the list of shells in /etc/shells. 
-sudo which zsh | tee -a /etc/shells
+sudo which zsh | sudo tee -a /etc/shells
 
 # Set Zsh as the default shell for the current user. 
 chsh -s $(which zsh)
